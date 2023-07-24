@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .container {
+            width: 90%;
+            margin: 5% auto;
+            background: rgba(250, 190, 255, 0.9);
+            padding: 40px;
+        }
+
+        h2, h3 {
+            color: rgba(30, 0, 230, 0.5);
+            margin: 20px 0;
+        }
+
+        p, h3 {
+            margin: 10px 30px;
+        }
+
+        p strong {
+            margin: 20px 0;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin: 0 50px;
+        }
+
+        ul li b {
+            color: rgba(30, 0, 230, 0.5);
+        }
+
+        .box {
+            background-color: rgba(0, 0, 220, 0.2);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 30px;
+        }
+
+        table,td,th {
+            border: 2px solid rgba(0, 155, 230, 0.5);
+            border-collapse: collapse;
+            padding: 10px;
+            background: rgba(123, 34, 145, 0.1);
+            margin: 30px 30px;
+        }
+
+        .table {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <h2>Q.1 What are the new tags added in HTML5?</h2>
+
+        <p>HTML5 is a new version of HTML (Hypertext Markup Language), as we all know. Numerous new tags that were added to HTML5 will be useful to many developers. Most popular browsers generally support these tags. These tags include a wide range of topics, including media, forms, and graphics.</p>
+
+        <p> <strong>List of all elements introduced in HTML5:</strong> </p>
+
+        <ul>
+            <li><b>&lt;article&gt; tag:</b> One of the new sectioning elements in HTML5 is the &lt;article&gt; tag. An article is represented in HTML using the &lt;article&gt; tag. Even if it may be related to other information on the site, the content included in the &lt;article&gt; tag is distinct from it.</li>
+
+            <li><b>The &lt;aside&gt; tag:</b> element is utilized to highlight or briefly discuss the main object of the web page. It essentially identifies the information that is pertinent to the main page's content but does not directly advance its purpose. The &lt;aside&gt; tag primarily provides author details, links, relevant content, etc.</li>
+
+            <li><b>&lt;audio&gt; tag:</b> An audio file can be added to an HTML webpage using the &lt;audio&gt; tag.</li>
+
+            <li><b>&lt;canvas&gt; tag:</b> JavaScript is used to draw images on a web page using the HTML &lt;canvas&gt; tag. It can be used to add images, gradients, boxes, words, and pathways. It does not come with borders or text by default.</li>
+
+            <li><b>&lt;command&gt; tag: </b> The &lt;command&gt; tag specifies a command button that the user can activate. Use of the &lt;command&gt; tag button is for a unique kind of activity. The only browser that supports the &lt;command&gt; tag is Internet Explorer.</li>
+
+            <li><b>&lt;datalist&gt; tag: </b> The &lt;datalist&gt; In HTML files, the autocomplete feature is provided by the &lt;datalist&gt; tag. It can be used in conjunction with an input tag to enable users to quickly fill out data on forms by selecting the data.</li>
+
+            <li><b>&lt;details&gt; tag:</b> The &lt;details&gt; tag is used for the content/information which is initially hidden but could be displayed if the user wishes to see it. This tag is used to create an interactive widget that the user can open or close. The content of the details tag is visible when opening the set attributes.</li>
+
+            <li>The &lt;summary&gt; For defining visible header, tag is used along with the &lt;detail&gt; tag.</li>
+
+            <li><b>&lt;embed&gt; tag: </b> In an HTML document, other applications—typically multimedia content like audio or video—can be included using the &lt;embed&gt; tag. It serves as a container for plug-ins like flash animations that are embedded. This tag is brand-new in HTML 5 and simply needs the commencing tag.</li>
+
+            <li><b>&lt;figure&gt; tag:</b> When adding self-contained material to a document, such as diagrams, photographs, or code listings, the HTML "figure" tag is utilized. The figure fits with the document's flow and may be removed without affecting the flow of the document even though it is tied to the primary flow and can be utilized in any position. This HTML5 tag is brand-new.</li>
+
+            <li><b>&lt;footer&gt; </b> The footer of an HTML document is defined by the &lt;footer&gt; tag. The footer information (author, copyright, carriers, etc.) is located in this area. The body tag incorporates the footer tag. New in HTML5 is the &lt;footer&gt; tag. Both a start tag and an end tag are required for the footer elements.</li>
+
+            <li><b>&lt;header&gt; tag:</b> Information about the heading and title of the associated content is contained in the &lt;header&gt; tag. The section heading (an h1-h6 element or a &lt;hgroup&gt; element) is typically intended to be contained in the &lt;header&gt;  element, but this is not essential.The table of contents for a section, a search form, and any pertinent logos can also be enclosed in the &lt;header&gt; element. A starting tag and an end tag are needed for the new HTML5 element known as the &lt;header&gt;  In a single document, there may be more than one &lt;header&gt;  element. It is not permitted to include a &lt;header&gt; tag inside of a &lt;footer&gt;, &lt;address&gt;, or another &lt;header&gt; element.</li>
+
+            <li><b>&lt;hgroup&gt; tag: </b> The heading components are grouped using the HTML tag known as "hgroup," which stands for heading group. HTML's hgroup tag is used to enclose one or more heading elements, such as headers and subheadings, ranging from &Lt;h1&gt; to &lt;h6&gt; Both the initial tag and the ending tag are necessary for the &lt;hgroup&gt; tag.
+
+            </li>
+            <li><b>&lt;keygen&gt; tag: </b> A key-pair generator field in a form is specified using the HTML &lt;keygen&gt; tag. The keygen element's function is to offer a safe means of user authentication. Two keys—a private key and a public key—are generated when a form is submitted. Locally, the private key is kept, and the server receives the public key. To authenticate a user in the future, a client certificate is created using the public key.</li>
+
+            <li><b>&lt;mark&gt; </b> ployed to draw attention to a certain passage of text. In HTML5, the &lt;mark&gt; tag is brand-new.</li>
+
+            <li><b>&lt;meter&gt; tag:</b> It also supports a fractional value and is used to specify the scale for measurement in a well defined range. It also goes by the name "gauge." In the use of disks, the outcome of relevant queries, etc.</li>
+
+            <li><b>&lt;nav&gt; tag:</b> In HTML texts, the navigational section is declared using the &lt;nav&gt; tag. Websites frequently feature sections with links that allow visitors to move about the site. These links may be contained within a navigation tag. In other words, the navigation element designates a region of the page whose function is to provide links for navigating within the current content or to another document. The links in the nav element may lead to various pages on the same website or to other websites altogether. It has semantic value. Menus, tables, contents, and indexes are typical illustrations of nav components.</li>
+
+            <li><b>&lt;output&gt; tag:</b> HTML's &lt;output&gt; tag is used to display the outcome of calculations made by client-side scripts like JavaScript. In HTML5, a starting and ends tag are necessary for the new &lt;output&gt; tag.</li>
+
+            <li><b>&lt;progress&gt; tag:</b> It serves as a gauge of a task's advancement. Additionally, it is specified how much work has been completed and how much needs to be downloaded. The disk space or the pertinent query are not represented by it.</li>
+
+            <li><b>&lt;ruby&gt; tag:</b> The ruby annotation, which is a brief sentence added to the main text to explain its meaning, is specified using the &lt;ruby&gt; element in HTML. Japanese publications often utilize this style of commentary.</li>
+
+            <li><b>&lt;section&gt; tag:</b> The &lt;section&gt; tag defines the section of documents such as chapters, headers, footers, or any other sections. The section tag divides the content into sections and subsections. The section tag is used when requirements of two headers or footers or any other section of documents are needed. The &lt;section&gt; tag grouped the generic block of related contents. The main advantage of the section tag is, it is a semantic element, which describes its meaning to both browser and developer.</li>
+
+            <li><b>&lt;time&gt; tag:</b> The &lt;time&gt; tag is used to display the human-readable date/time. It can also be used to encode dates and times in a machine-readable form. The main advantage for users is that they can offer to add birthday reminders or scheduled events in their calendar’s and search engines can produce smarter search results.</li>
+
+            <li><b>&lt;wbr&gt; tag:</b> The <wbr> tag in HTML stands for word break opportunity and is used to define the position within the text which is treated as a line break by the browser. It is mostly used when the used word is too long and there are chances that the browser may break lines at the wrong place for fitting the text.</li>
+
+            <li><b>&lt;video&gt; tag:</b> A movie clip or other video streams can be included in a document by using the &lt;video?&gt; tag.</li>
+        </ul>
+
+
+        <h2>Q-2. How to embed audio and video in a webpage?</h2>
+
+        <h3>The HTML5 audio Element is utilized</h3>
+
+        <p>Recently released HTML5 &lt;audio&gt;  element offers a standard method for including audio on web pages. While the audio component is more recent, it is compatible with the majority of current web browsers.</p>
+
+        <p>The sample below simply adds audio into an HTML5 document using one source specified by the src element and the browser's default controls.</p>
+
+        <div class="box">
+            &lt;audio controls="controls" src="media/birds.mp3"&gt;  <br>
+                &nbsp; &nbsp; Your browser does not support the HTML5 Audio element.  <br>
+            &lt;/audio&gt;  <br>
+        </div>
+
+        <p>Audio from several sources, with the defaults of the browser.</p>
+
+        <div class="box">
+            &lt;audio controls="controls"&gt; <br>
+                &nbsp; &nbsp;&lt;source src="media/birds.mp3" type="audio/mpeg"&gt; <br>
+                &nbsp; &nbsp;&lt;source src="media/birds.ogg" type="audio/ogg"&gt; <br>
+                &nbsp; &nbsp;Your browser does not support the HTML5 Audio element. <br>
+            &lt;/audio&gt; <br>
+        </div>
+
+        <p>The 'ogg' track in the aforementioned example plays audio on Firefox, Opera, and Chrome but Internet Explorer and Safari require the'mp3' track.
+        </p>
+
+        <h3>Linking Audio Files</h3>
+
+        <p>Your audio files can be linked to and played by checking the box next to them.
+        </p>
+
+        <p>Consider the following illustration to illustrate how this functions in real life:
+        </p>
+
+        <div class="box">
+            &lt;a href="media/sea.mp3"&gt;Track 1&lt;/a&gt;
+            &lt;a href="media/wind.mp3"&gt;Track 2&lt;/a&gt;
+        </div>
+
+        <h3>Using the object Element</h3>
+
+        <p>In HTML texts, the &lt;object&gt; element is used to embed several kinds of media assets. The specification indicates that an object may be any sort of media item, including audio, video, PDF files, Flash animations, and even photographs. Originally, this element was used to insert ActiveX controls.
+        </p>
+
+        <p>The example code below is used to embed a basic audio file in a web page.
+
+        </p>
+
+        <div class="box">
+            &lt;object data="media/sea.mp3"&gt;&lt;/object&gt;
+            <&lt; data="media/sea.ogg"&gt;&lt;/object&gt;
+        </div>
+
+        <p>Despite the fact that most recent browsers accept the embed> element and that it is defined as a standard in HTML5, your audio won't play because neither plugins nor those browsers support that particular file type.</p>
+
+        <h3>HTML5 Video</h3>
+
+        <p>This tutorial teaches you how to include a video in an HTML document.
+        </p>
+
+        <h3>Embedding Video in HTML Document</h3>
+
+        <p>Video could not be easily embedded into a web page since there was no universal description language for embedded media files like video in web browsers.</p>
+
+        <p>In this chapter, we'll show some of the many ways to add videos to web sites, from the new HTML5 "video" element to well-known YouTube films.</p>
+
+        <h3>Using the HTML5 video Element</h3>
+
+        <p>A recently announced standard for embedding video in web pages is the HTML5 "video" element. While the video component is more recent, it is compatible with the majority of current web browsers.</p>
+
+        <p>The example that follows merely uses the browser's built-in capabilities to insert a video into an HTML document from a single source identified by the src property.</p>
+
+        <div class="box">
+            &lt;video controls="controls" src="media/shuttle.mp4"&gt; <br>
+                Your browser does not support the HTML5 Video element. <br>
+            &lt;/video&gt; <br>
+        </div>
+
+        <p>a video from many sources, using default browser controls. </p>
+
+        <div class="box">
+            &lt;video controls="controls"&gt; <br>
+                &nbsp; &nbsp; &lt;source src="media/shuttle.mp4" type="video/mp4"&gt; <br>
+                &nbsp; &nbsp; &lt;source src="media/shuttle.ogv" type="video/ogg"&gt;  <br>
+                &nbsp; &nbsp;  Your browser does not support the HTML5 Video element. <br>
+            &lt;/video&gt; <br>
+        </div>
+
+        <h3>Using the object Element</h3>
+
+        <p>In HTML texts, the object> element is used to embed several kinds of media assets. The specification indicates that an object may be any sort of media item, including video, audio, PDF files, Flash animations, and even photographs. Originally, this element was used to insert ActiveX controls.</p> 
+
+        <p>The snippet of code below adds a Flash video to a website.</p>
+
+        <div class="box">
+            &lt;object data="media/blur.swf" width="400px" height="200px"&gt; &lt;/object&gt; 
+        </div>
+    
+        <p>Only browsers or programs that support Flash will be able to view this video.</p> 
+
+        <p>CAUTION: The &lt;object&gt; element isn't widely used and depends heavily on the type of item being put. Alternative approaches may be desirable in some circumstances. The iPad and iPhone don't support Flash videos.</p>
+
+         <h3>Using the embed Element</h3>
+
+         <p>Use the embed> element to incorporate multimedia content into HTML documents.</p>
+
+         <p>The snippet of code below adds a Flash video to a website.
+        </p>
+
+         <div class="box">
+            &lt;embed src="media/blur.swf" width="400px" height="200px"&gt;
+         </div>
+
+         <p>Your video might not play even though the embed> element is widely supported by contemporary web browsers and is defined as a standard in HTML5 owing to a lack of plugins or browser support for Flash. </p>
+
+        <h2> Q-3. Semantic element in HTML5?</h2>
+
+        <h3>New Semantic Elements in HTML5</h3>
+
+        <p>For navigation, header, and footer, many websites use HTML code like this: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt;.</p>
+
+        <p>HTML5 provides new semantic elements to specify various web page components, including: </p>
+
+        <ul>
+            <li>&lt;article&gt;</li>
+            <li>&lt;aside&gt;</li>
+            <li> &lt;details&gt;</li>
+            <li>&lt;figcaption&gt;</li>
+            <li>&lt;figure&gt;</li>
+            <li>&lt;footer&gt;</li>
+            <li>&lt;header&gt;</li>
+            <li>&lt;main&gt;</li>
+            <li>&lt;mark&gt;</li>
+            <li>&lt;nav&gt;</li>
+            <li>&lt;section&gt;</li>
+            <li>&lt;summary&gt;</li>
+            <li>&lt;time&gt;</li>
+        </ul>
+
+        <h3>HTML5 &lt;section&gt; Element</h3>
+
+        <p>A section of a document is defined by the "section" element.</p>
+
+        <p>The HTML5 documentation provided by the W3C states that "a section is a thematic grouping of content, typically with a heading."</p>
+
+        <p>The home page of a website could be divided into sections for the introduction, content, and contact details.</p>
+
+        <div class="box">
+            &lt;section&gt; <br>
+               &nbsp;&nbsp; &lt;h1>WWF&lt;/h1&gt;<br>
+               &nbsp;&nbsp; &lt;p>The World Wide Fund for Nature (WWF) is....&lt;/p&gt;<br>
+              &lt;/section&gt;<br>
+        </div>
+
+        <h3>HTML5 <article> Element</h3>
+
+            <p>The article> element designates standalone, independent material.</p>
+            <p>An article must make sense on its own and be accessible without reference to other parts of the website.</p>
+            <p>Examples of applications for the article> element include:</p>
+
+            <ul>
+                <li>Forum post</li>
+                <li>Blog post</li>
+                <li>Newspaper article</li>
+        </ul>
+
+        <div class="box">
+            &lt;article&gt;<br>
+                &lt;h1>What Does WWF Do?&lt;/h1&gt;<br>
+                &lt;p>WWF's mission is to stop the degradation of our planet's natural environment,<br>
+                and build a future in which humans live in harmony with nature.&lt;/p&gt;<br>
+              &lt;/article&gt;<br>
+        </div>
+
+        <h3>Nesting Semantic Elements</h3>
+
+        <p>The article> element in the HTML5 standard defines a comprehensive, self-contained block of related elements.</p>
+
+        <p>A block of associated elements is what the "section" element is defined as.</p>
+
+        <p>Can we choose how to nest items using the definitions? Definitely not!</p>
+
+        <p>HTML pages with section> elements containing article> elements and article> elements having sections> elements can be found online.</p>
+
+        <p>Pages having "section" elements inside of "section" elements and "article" elements inside of "article" elements can also be found.</p>
+
+        <h3>HTML5 &lt;header&gt; Element</h3>
+
+            <p>A header for a page or section is specified by the "header" element.</p>
+            <p>Introductional text should be contained within the header> element.</p>
+            <p>A document may include many "header" components.</p>
+            <p>The header for an article is defined by the example below:</p>
+
+            <div class="box">
+                &lt;article&gt; <br>
+                    &lt;header&gt; <br>
+                      &lt;h1>What Does WWF Do?&lt;/h1&gt; <br>
+                      &lt;p>WWF's mission:&lt;/p&gt; <br>
+                    &lt;/header&gt; <br>
+                    &lt;p>WWF's mission is to stop the degradation of our planet's natural environment, <br>
+                    and build a future in which humans live in harmony with nature.</p> <br>
+                  &lt;/article&gt; <br>
+            </div>
+
+            <h3>HTML5 &lt;footer&gt; Element</h3>
+
+            <p>The footer for a document or section is specified by the "footer" element.</p>
+
+            <p>A footer element should provide details about the element it is included within.</p> 
+
+            <p>The document's author, copyright details, links to the terms of use, contact information, etc. are often included in the footer.</p>
+
+            <p>A document may contain many "footer" components.</p>
+
+            <div class="box">
+                &lt;footer&gt; <br>
+                    &lt;p&gt;Posted by: Hege Refsnes&lt;/p&gt; <br>
+                    &lt;p&gt;Contact information: &lt;a href="mailto:someone@example.com"&gt; <br>
+                    someone@example.com&lt;/a&gt;.&lt;/p&gt; <br>
+                  &lt;/footer&gt; <br>
+            </div>
+
+            <h3>HTML5 &lt;nav&gt; Element</h3>
+
+            <p>A series of navigation links is defined by the nav> element.</p>
+            <p>Large blocks of navigational links are meant for the nav> element. But not every link in a document needs to be in a nav element!</p>
+
+            <div class="box">
+                &lt;nav&gt;
+                    &lt;a href="/html/">HTML&lt;/a&gt; |
+                    &lt;a href="/css/">CSS&lt;/a&gt; |
+                    &lt;a href="/js/">JavaScript&lt;/a&gt; |
+                    &lt;a href="/jquery/">jQuery&lt;/a&gt;
+                &lt;/nav&gt;
+            </div>
+
+            <h3>HTML5 aside> Element</h3>
+
+            <p>The "aside" element (sometimes known as a "sidebar") establishes content that is separate from the content it is placed in.</p>
+
+            <p>The content that comes before the main topic should be relevant to it.</p>
+
+            <div class="box">
+                &lt;aside&gt; <br>
+                   &nbsp;&nbsp; &lt;h4&gt;Epcot Center&lt;/h4&gt; <br>
+                   &nbsp;&nbsp; &lt;p&gt;The Epcot Center is a theme park in Disney World, Florida.&lt;/p&gt; <br>
+                  &lt;/aside&gt; <br>
+            </div>
+
+            <h3>HTML5 &lt;figure&gt; and &lt;figcaption&gt; Elements</h3>
+
+            <p>It is typical for photos to have captions in books and newspapers.</p>
+
+            <p>A caption's main function is to provide an image with a visual interpretation.</p>
+
+            <p>With HTML5, &lt;figure&gt; elements can be used to group together photos and captions:</p>
+
+            <div class="box">
+                &lt;figure&gt; <br>
+                    &lt;img src="pic_mountain.jpg" alt="The Pulpit Rock" width="304" height="228"&gt; <br>
+                    &lt;figcaption>Fig1. - The Pulpit Rock, Norway.&lt;/figcaption&gt; <br>
+                  &lt;/figure&gt; <br>
+            </div>
+
+            <p>The image is described by the &lt;img&gt; element, while the caption is described by the &lt;figcaption&gt; element.
+            </p>
+
+            <h3>Semantic Elements in HTML5</h3>
+
+            <p></p>
+
+        <div class="table">
+            <table align="Center">
+
+                <tr>
+                     <th>Tag</th>
+                     <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Defines an article</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Defines content aside from the page content</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;details&gt;</td>
+                    <td>Defines additional details that the user can view or hide</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Defines a caption for a &lt;figure&gt; element</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Defines a footer for a document or section</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Specifies a header for a document or section</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>Specifies the main content of a document</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Defines marked/highlighted text</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Defines navigation links</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Defines a section in a document</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;summary&gt;</td>
+                    <td>	Defines a visible heading for a &lt;details&gt; element</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;time&gt;</td>
+                    <td>Defines a date/time</td>
+                </tr>
+            </table>
+        </div>
+
+            <h2>Q-4 . Canvas and SVG tags</h2>
+
+            <p>Both SVG and canvas have the ability to produce rich visuals in web browsers, yet they differ greatly from one another.
+            </p>
+
+            <p> <strong>SVG</strong> </p>
+
+            <p>SVG is a vector-based graphics language that may be used to define images like text, circles, and boxes in XML-based image formats.</p>
+
+            <p>It is a language for XML-based graphical applications and 2D graphics. SVG can be shown by the majority of web browsers just like PNG, GIF, and JPG.</p>
+
+            <p>SVG images outperform bitmap graphics by a wide margin.</p>
+
+            <p><strong>CANVAS</strong></p>
+
+            <p>An HTML5 element called Canvas is used to draw visuals for the dynamic, scriptable rendering of bitmap pictures and 2D and 3D shapes on a website.</p>
+
+            <p>For the graphics to be drawn in Canvas, we need the script. It offers a blank graphic area that only a few JavaScript APIs (like Canvas 2D or WebGL) may draw on.</p>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Difference between SVG and CANVAS</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <th>SVG</th>
+                    <th>CANVAS</th>
+                </tr>
+
+                <tr>
+                    <td>SVG is a vector picture format that uses shapes and is based on XML.</td>
+                    <td>The CANVAS format is raster-based (pixel-based).</td>
+                </tr>
+
+                <tr>
+                    <td>SVG is more adaptable since we can use it in ways other than its inherent</td>
+                    <td>CANVAS isn't adaptable</td>
+                </tr>
+
+                <tr>
+                    <td>No gaming application should use SVG.</td>
+                    <td>Applications for games can benefit from CANVAS.</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript and CSS can be used to edit SVG images.</td>
+                    <td>Only JavaScript can be used to change CANVAS.</td>
+                </tr>
+
+                <tr>
+                    <td>SVG only produces 2D graphics.</td>
+                    <td>Both 2D and 3D graphics are produced by CANVAS.</td>
+                </tr>
+
+                <tr>
+                    <td>Applications with huge rendering regions, like Google Maps, are best suited for SVG.</td>
+                    <td>CANVAS is ideal for low-resolution depiction of big areas.</td>
+                </tr>
+
+                <tr>
+                    <td>SVG is independent of resolution</td>
+                    <td>CANVAS are influenced by resolution</td>
+                </tr>
+
+                <tr>
+                    <td>It has API animation capabilities.</td>
+                    <td>API animation is possible with CANVAS.</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    
+</body>
+</html>
